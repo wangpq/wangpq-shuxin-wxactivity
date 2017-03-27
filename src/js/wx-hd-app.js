@@ -1,5 +1,5 @@
 F.options={
-  base : '/wxhuodong/src'
+  base : '/wangpq-shuxin-wxactivity/src'
 }
 F.use([
   "css/wx-hd-swiper.css",
