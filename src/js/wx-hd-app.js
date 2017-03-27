@@ -1,5 +1,5 @@
 F.options={
-  base : 'http://localhost/wxhuodong/src'
+  base : '/wxhuodong/src'
 }
 F.use([
   "css/wx-hd-swiper.css",
