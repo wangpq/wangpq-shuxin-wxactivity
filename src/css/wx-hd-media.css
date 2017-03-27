@@ -1,0 +1,32 @@
+﻿/********************************************
+ * 此CSS文件用于配置不同屏幕的字体大小
+ * Released under the MIT license
+ * http://www.ishuxin.cn/license
+ * Author : Wangpq;
+ * Date: 2015-06-04T17:00Z
+ *******************************************/
+html { font-size : 18px;}
+@media only screen and (min-width: 321px){
+  html {font-size: 18px !important;}
+}
+@media only screen and (min-width: 374px){
+  html {font-size: 20px !important;}
+}
+@media only screen and (min-width: 401px){
+  html {font-size: 22px !important;}
+}
+@media only screen and (min-width: 428px){
+  html { font-size:22px !important;}
+}
+@media only screen and (min-width: 481px){
+  html { font-size: 24px !important;}
+}
+@media only screen and (min-width: 569px){
+  html { font-size: 24px !important;}
+}
+@media only screen and (min-width: 641px){
+  html { font-size: 24px !important;}
+}
+@media only screen and (min-width: 737px){
+  html { font-size: 24px !important;}
+}

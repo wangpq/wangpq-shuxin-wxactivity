@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+  <title>动画</title>
+  <meta charset="utf-8">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1.4, user-scalable=yes">
+  
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <meta name="apple-itunes-app" content="app-id=955361348">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="shuxin UI">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="images/icon-300X300.png">
+  <meta name="msapplication-TileColor" content="#0e90d2">
+  <div id="wx_pic" style="margin:0 auto;display:none;">
+     <img src="http://www.ishuxin.cn/images/icon-300X300.png" />
+  </div>
+  <script src="src/js/frilend.js"></script>
+  <script src="src/js/wx-hd-app.js"></script>
+
+</head>
+<body>
+
+<!-- Swiper -->
+<div class="swiper-container" id="swiper">
+  <div class="swiper-wrapper"></div>
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-next animated fadeInUp infinite"></div>
+</div>
+
+<!-- 气泡 -->
+<canvas id="canvas"></canvas>
+
+<!-- GIF动画 -->
+<img id="gif-img" src="src/images/weixin-hd-hello.gif" alt="hello frilend">
+
+<!-- 简易音乐盒子 -->
+<div class="audio-box">
+  <i></i>
+  <audio loop="loop" preload="preload">
+    <source src="src/media/wx-hd-song.mp3" type="audio/mpeg">
+    <source src="src/media/wx-hd-song.ogg" type="audio/ogg">
+  </audio>
+</div>
+
+<!-- 第1页 -->
+<div class="page" id="p-1"> 
+
+    <div class="one">
+
+      <img class="text animate-item" src="src/images/weixin-hd-jqnxs.png" alt="借钱那些事"  data-sx-animate="{animation:'fadeInRight'}">
+      <img class="hand animate-item" src="src/images/weixin-hd-hand.png" alt="手掌哦"  data-sx-animate="{animation:'fadeInLeft',delay:400}"> 
+    </div>
+
+    <p class="two">
+      <img src="src/images/weixin-hd-xqqm.png" alt="你不借他钱，他说你小气！你借完钱管他要他说你抠！" class="animate-item"  data-sx-animate="{animation:'fadeInDown',delay:1400}">
+    </p>
+
+    <p class="three">
+      <img src="src/images/weixin-hd-zdybs.png" alt="咋地也不是，哎!" class="animate-item"  data-sx-animate="{animation:'shake',delay:2400}"  data-sx-animate-two="{animation:'bounce',infinite:true}">
+    </p>
+
+</div>     
+
+<!-- 第2页 -->
+<div class="page" id="p-2"> 
+
+    <div class="bg-image">
+      <i class="xingxing animate-item" data-sx-animate="{animation:'puffIn'}" data-sx-animate-two="{animation:'glint',delay:1000,infinite:true}"></i>
+      <i class="gaota animate-item" data-sx-animate="{animation:'fadeInUpBig'}"></i>
+    </div>
+
+    <h2 class="one">
+      <img src="src/images/weixin-hd-qqbhdhz.png" alt="欠钱不还的那些孩子？"  class="animate-item" data-sx-animate="{animation:'puffIn'}">
+    </h2>
+
+    <div class="two">
+      <div class="wrap animate-item"  data-sx-animate="{animation:'fadeInDownBig',delay:2000}">
+        <p>
+          <span style="font-size:1.1rem;color:#fafcb8;position:relative;top:-0.6rem;padding-right:1rem" class="animate-item" data-sx-animate="{animation:'fadeInDownBig',delay:2000}" data-sx-animate-two="{animation:'pulse',infinite:true}">朋友反目</span>
+
+          <span style="font-size:1.1rem;color:#fafcb8"  class="animate-item" data-sx-animate="{animation:'fadeInDownBig',delay:2400}">兄弟成仇</span> 
+        </p>
+        <p>
+          <span style="font-size:1.1rem;position:relative;top:-10px;left:-3rem" class="animate-item" data-sx-animate="{animation:'slideLeftRetourn',delay:3000}" data-sx-animate-two="{animation:'pulse',infinite:true}">友尽</span>
+
+          <span  style="font-size:0.9rem;" class="animate-item" data-sx-animate="{animation:'puffIn',delay:3000}">紧张</span>
+         
+          <span style="font-size:1rem;color:#75feba;position:relative;top:14px;right:-52px" class="animate-item" data-sx-animate="{animation:'slideRightRetourn',delay:3000}" data-sx-animate-two="{animation:'pulse',infinite:true}">开不了口</span> 
+        </p>
+        
+        <p>
+          <span  style="font-size:0.9rem;position:relative;left:-2.3em;top:-20px" class="animate-item" data-sx-animate="{animation:'rollIn',delay:4500}" >没面子</span>
+         
+          <span style="font-size:1.1rem;position:relative;left:-2.4em;top:0.5em" class="animate-item" data-sx-animate="{animation:'fadeInUp',delay:3500}" >心里别扭</span>
+        </p>
+        <p>
+          <span  style="font-size:0.9rem;color:#75feba;position:relative;left:-3em" class="animate-item" data-sx-animate="{animation:'fadeInUpBig',delay:4500}">怕不还</span>
+
+          <span style="font-size:1.2rem;position:relative;right:-2em" class="animate-item" data-sx-animate="{animation:'fadeInUpBig',delay:5000}" data-sx-animate-two="{animation:'pulse',infinite:true}">不想借</span>
+        </p>
+      </div>  
+    </div> 
+
+    <p class="three">
+      <img src="src/images/weixin-hd-zddzza.png" alt="这到底该咋整啊？"  class="animate-item" data-sx-animate="{animation:'spaceInUp',delay:6000}"  data-sx-animate-two="{animation:'bounce',infinite:true}">
+    </p>
+
+</div> 
+
+<!-- 第3页 -->
+<div class="page" id="p-3"> 
+
+    <div class="bg-image">
+      <i class="qiqiu animate-item" data-sx-animate="{animation:'fadeInUpBig'}" data-sx-animate-two="{animation:'pulse',infinite:true,delay:1000}"></i>
+      <i class="star animate-item" data-sx-animate="{animation:'flash',delay:1000,infinite:true}"></i>
+    </div>
+
+    <div class="brand one">
+      <img src="src/images/weixin-hd-brand.png" alt="Frilend 熟人匿名借贷，让借钱更体面" class="animate-item" data-sx-animate="{animation:'fadeInDownBig'}">
+    </div>
+
+    <div class="two">
+       <img src="src/images/weixin-hd-shoutou.png" alt="手头紧，可上熟信借钱 手头松，可上熟信赚钱" class="animate-item" data-sx-animate="{animation:'puffIn',delay:1500}">
+    </div>   
+
+    <h3 class="three animate-item" data-sx-animate="{animation:'rollIn',delay:2500}">
+       <img src="src/images/weixin-hd-timiananquan.png" alt="体面+安全+高收益" class="animate-item" data-sx-animate="{animation:'puffIn',delay:1500}">
+    </h3>
+   <!-- 
+    <p class="four">
+      <a href="http://www.ishuxin.cn/" target="_blank">
+      <img src="src/images/comehere.png" alt="来熟信吧！麻溜的" class="animate-item" data-sx-animate="{animation:'zoomInRight',delay:3500}" data-sx-animate-two="{animation:'quick',infinite:true}"></a>
+    </p>
+  -->
+    <p class="four">
+     <a href="http://www.ishuxin.cn/download.html" target="_blank"  class="btn-dowload animate-item"  data-sx-animate="{animation:'zoomInRight',delay:3500}" data-sx-animate-two="{animation:'quick',infinite:true}">
+      </a>
+    </p>
+
+</div> 
+
+</body>
+</html>
